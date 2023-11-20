@@ -85,7 +85,7 @@ st.plotly_chart(fig )
 #st.image(images, width=200 )
 
 st.text('\n')
-image = Image.open('logo_three.png')
+image = Image.open('app_boxplot/logo_three.png')
 #st.image(image, caption='Sunrise by the mountains' )
 st.image(image, width=520)
 
