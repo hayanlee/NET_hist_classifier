@@ -7,8 +7,7 @@ from PIL import Image
 
 st.title('NEN PD/WD gene expression')
 
-#df = pd.read_csv('../NET_NSData/NECPath.all.data.gene.h.pval.tsv', sep='\t').set_index('Name')
-df = pd.read_csv('NECPath.all.data.gene.h.pval.tsv.gz', sep='\t').set_index('Name')
+df = pd.read_csv('app_boxplot/NECPath.all.data.gene.h.pval.tsv.gz', sep='\t').set_index('Name')
 df.sort_index( axis = 0, inplace = True )
 
 #st.text( df )
