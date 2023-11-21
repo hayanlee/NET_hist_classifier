@@ -32,7 +32,7 @@ fig.add_trace(go.Box(y=df.loc[gene,:][21:-1], boxpoints = 'all', name = 'PD (N=1
 fig.add_trace(go.Box(y=df.loc[gene,:][:21], boxpoints = 'all', name = 'WD (N=21)', marker_color='dodgerblue' ) )
 
 fig.update_layout(    
-    width = 500, height= 500,
+    width = 540, height= 500,
     title_font_size = 20,
     plot_bgcolor = 'rgb(255,255,255)',
     title={
