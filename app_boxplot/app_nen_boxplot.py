@@ -36,7 +36,7 @@ fig.update_layout(
     title_font_size = 20,
     plot_bgcolor = 'rgb(255,255,255)',
     title={
-        'text': "{} expression (p-val={:.2e})".format(gene, df.loc[gene,:][-1]),
+        'text': "{} (p-val={:.2e})".format(gene, df.loc[gene,:][-1]),
         'y':0.9,
         'x':0.5,
         'xanchor': 'center',
