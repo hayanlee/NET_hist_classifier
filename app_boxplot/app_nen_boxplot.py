@@ -57,7 +57,7 @@ fig.add_shape(type="line",
             line=dict(color='black', width=1,)
         )
 
-fig.add_annotation(dict(font=dict(color='black', size=14),
+fig.add_annotation(dict(font=dict(color='black', size=16),
             x=0.5,
             y=max(df.loc[gene,:])+0.7,
             showarrow=False,
