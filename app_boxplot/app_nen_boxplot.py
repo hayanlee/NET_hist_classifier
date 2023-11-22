@@ -37,8 +37,8 @@ fig.add_shape(type="line",
             line=dict(color='black', width=1,)
         )
 fig.add_shape(type="line",
-            x0=0, y0=max(df.loc[gene,:])+0.5, 
-            x1=1, y1=max(df.loc[gene,:])+0.5,
+            x0=0, y0=max(df.loc[gene,:])+0.6, 
+            x1=1, y1=max(df.loc[gene,:])+0.6,
             line=dict(color='black', width=1,)
         )
 fig.add_shape(type="line",
