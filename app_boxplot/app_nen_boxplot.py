@@ -46,7 +46,17 @@ fig.add_shape(type="line",
             x1=1, y1=max(df.loc[gene,:])+0.4,
             line=dict(color='black', width=1,)
         )
-
+symbol = '*'
+subplot_str = 'pval'
+fig.add_annotation(dict(font=dict(color='black', size=14),
+            x=0.5,
+            y=0.7,
+            showarrow=False,
+            text=symbol,
+            textangle=0,
+            xref="x"+subplot_str,
+            yref="y"+subplot_str+" domain"
+        ))
 fig.update_layout(    
     width = 540, height= 500,
     title_font_size = 20,
