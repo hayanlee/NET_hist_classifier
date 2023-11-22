@@ -32,9 +32,9 @@ fig.add_trace(go.Box(y=df.loc[gene,:][21:-1], boxpoints = 'all', name = 'PD (N=1
 fig.add_trace(go.Box(y=df.loc[gene,:][:21], boxpoints = 'all', name = 'WD (N=21)', marker_color='dodgerblue' ) )
 
 pval = df.loc[gene,:][-1]
-if pval <= 0.005 : 
+if pval <= 0.0005 : 
     symbol = '***'
-elif pval < 0.05 : 
+elif pval < 0.005 : 
     symbol = '**'
 elif pval < 0.05 : 
     symbol = '*'
