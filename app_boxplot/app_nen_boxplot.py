@@ -59,7 +59,7 @@ fig.add_shape(type="line",
 
 fig.add_annotation(dict(font=dict(color='black', size=16),
             x=0.5,
-            y=max(df.loc[gene,:])+0.7,
+            y=max(df.loc[gene,:])+0.75,
             showarrow=False,
             text=symbol,
             textangle=0
