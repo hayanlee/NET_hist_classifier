@@ -53,9 +53,7 @@ fig.add_annotation(dict(font=dict(color='black', size=14),
             y=0.7,
             showarrow=False,
             text=symbol,
-            textangle=0,
-            xref="x"+subplot_str,
-            yref="y"+subplot_str+" domain"
+            textangle=0
         ))
 fig.update_layout(    
     width = 540, height= 500,
