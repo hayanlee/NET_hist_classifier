@@ -34,7 +34,7 @@ fig.add_trace(go.Box(y=df.loc[gene,:][:21], boxpoints = 'all', name = 'WD (N=21)
 fig.add_shape(type="line",
             x0=0, y0=max(df.loc[gene,:])+0.5, 
             x1=0, y1=max(df.loc[gene,:])+0.4,
-            line=dict(color=_format['color'], width=1,)
+            line=dict(color='black', width=1,)
         )
 fig.add_shape(type="line",
             x0=0, y0=max(df.loc[gene,:])+0.5, 
