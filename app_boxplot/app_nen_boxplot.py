@@ -31,30 +31,36 @@ fig = go.Figure()
 fig.add_trace(go.Box(y=df.loc[gene,:][21:-1], boxpoints = 'all', name = 'PD (N=15)', marker_color='orangered' ) )
 fig.add_trace(go.Box(y=df.loc[gene,:][:21], boxpoints = 'all', name = 'WD (N=21)', marker_color='dodgerblue' ) )
 
-fig.add_shape(type="line",
+pval = df.loc[gene,:][-1]
+if pval < 0.05 : 
+        #    p-val={:.2e})".format(gene, df.loc[gene,:][-1]),
+    fig.add_shape(type="line",
             x0=0, y0=max(df.loc[gene,:])+0.6, 
             x1=0, y1=max(df.loc[gene,:])+0.4,
             line=dict(color='black', width=1,)
         )
-fig.add_shape(type="line",
+    fig.add_shape(type="line",
             x0=0, y0=max(df.loc[gene,:])+0.6, 
             x1=1, y1=max(df.loc[gene,:])+0.6,
             line=dict(color='black', width=1,)
         )
-fig.add_shape(type="line",
+    fig.add_shape(type="line",
             x0=1, y0=max(df.loc[gene,:])+0.6, 
             x1=1, y1=max(df.loc[gene,:])+0.4,
             line=dict(color='black', width=1,)
         )
-symbol = '*'
-subplot_str = 'pval'
-fig.add_annotation(dict(font=dict(color='black', size=14),
+    symbol = '*'
+    subplot_str = 'pval'
+    fig.add_annotation(dict(font=dict(color='black', size=14),
             x=0.5,
             y=0.7,
             showarrow=False,
             text=symbol,
             textangle=0
         ))
+else :
+    pass
+            
 fig.update_layout(    
     width = 540, height= 500,
     title_font_size = 20,
