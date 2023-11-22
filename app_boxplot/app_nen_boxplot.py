@@ -32,13 +32,18 @@ fig.add_trace(go.Box(y=df.loc[gene,:][21:-1], boxpoints = 'all', name = 'PD (N=1
 fig.add_trace(go.Box(y=df.loc[gene,:][:21], boxpoints = 'all', name = 'WD (N=21)', marker_color='dodgerblue' ) )
 
 fig.add_shape(type="line",
-            x0=0, y0=max(df.loc[gene,:])+0.5, 
+            x0=0, y0=max(df.loc[gene,:])+0.6, 
             x1=0, y1=max(df.loc[gene,:])+0.4,
             line=dict(color='black', width=1,)
         )
 fig.add_shape(type="line",
             x0=0, y0=max(df.loc[gene,:])+0.5, 
             x1=1, y1=max(df.loc[gene,:])+0.5,
+            line=dict(color='black', width=1,)
+        )
+fig.add_shape(type="line",
+            x0=1, y0=max(df.loc[gene,:])+0.6, 
+            x1=1, y1=max(df.loc[gene,:])+0.4,
             line=dict(color='black', width=1,)
         )
 
