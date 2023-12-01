@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from PIL import Image
 
 
-st.title('NEN PD/WD gene expression')
+#st.title('NEN PD/WD gene expression')
 st.title('Neuroendocrine neoplasm (NEN) PD/WD gene expression')
 
 
